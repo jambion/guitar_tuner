@@ -1,0 +1,18 @@
+#header {
+	width: 50%;
+	margin: auto;
+	text-align: center;
+}
+
+#tuner {
+	/*border: 1px solid blue;*/
+	width: 50%;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+}
+
+#tuner > div {
+	border: 1px solid black;
+	padding: 5px;
+}
