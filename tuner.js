@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
 	console.log("Hello World!");
 
   var lowEAudio = $("#lowEmp3");
@@ -37,5 +38,17 @@ $(document).ready(function(){
 		var sound = $("#audioHighE")[0];
 		sound.play();
 	});
+
+	$("#strings > div").mouseenter(function(){
+		$(this).fadeTo(100, 0.7);
+		
+	});	
+
+	$("#strings > div").mouseleave(function(){
+		$(this).fadeTo(100, 1);
+		
+	});
+
+
 
 });

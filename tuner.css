@@ -1,10 +1,13 @@
+body {
+	background: #C5BD99;
+}
 #header {
 	width: 50%;
 	margin: auto;
 	text-align: center;
 }
 
-#tuner {
+#strings {
 	/*border: 1px solid blue;*/
 	width: 50%;
 	margin: auto;
@@ -12,7 +15,12 @@
 	justify-content: center;
 }
 
-#tuner > a {
-	border: 1px solid black;
-	padding: 5px;
+#strings > div {
+/*	border: 1px solid black;
+	padding: 5px;*/
+}
+
+img {
+	width: 100px;
+
 }
