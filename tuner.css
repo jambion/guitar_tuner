@@ -26,3 +26,41 @@ body {
 img {
 	width: 100px;
 }
+
+#donny {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#donny > div {
+	display:flex;
+}
+
+#donny > div > div {
+	width: 20px;
+	height: 20px;
+	/*border: 1px solid black;*/
+	background: white;
+}
+
+#donny > div >.black {
+	background: rgb(43, 43, 43);
+}
+
+#donny > div >.lightGreen {
+	background: rgb(40, 212, 38);
+}
+
+#donny > div >.darkGreen {
+	background: rgb(0, 128, 1);
+}
+
+#donny > div >.purple {
+	background: rgb(130, 1, 143);
+}
+
+#donny > div > .red {
+	background: rgb(251, 2, 6);
+}
+
