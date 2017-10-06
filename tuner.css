@@ -27,6 +27,11 @@ img {
 	width: 100px;
 }
 
+
+.changeTurtle {
+	text-align: center;
+}
+
 #donny {
 	display: flex;
 	flex-direction: column;
@@ -40,7 +45,7 @@ img {
 #donny > div > div {
 	width: 20px;
 	height: 20px;
-	/*border: 1px solid black;*/
+	/*border: .5px solid black;*/
 	background: white;
 }
 
@@ -57,7 +62,7 @@ img {
 }
 
 #donny > div >.purple {
-	background: rgb(130, 1, 143);
+	background: purple;
 }
 
 #donny > div > .red {

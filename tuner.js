@@ -49,5 +49,13 @@ $(document).ready(function(){
 		
 	});
 
+	var turtleMask = ["orange", "purple", "blue", "red"];
+
+	$(".changeTurtle").click(function(){
+		var randNum = Math.floor(Math.random() * 4);
+		$("body > #donny > div > .mask").css({
+			"background": turtleMask[randNum]
+		});
+	});
 
 });
