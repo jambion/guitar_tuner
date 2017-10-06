@@ -49,13 +49,15 @@ $(document).ready(function(){
 		
 	});
 
-	var turtleMask = ["orange", "purple", "blue", "red"];
+	const turtleMask = ["orange", "purple", "blue", "red"];
+
+	let maskNum = 0;
 
 	$(".changeTurtle").click(function(){
-		var randNum = Math.floor(Math.random() * 4);
 		$("body > #donny > div > .mask").css({
-			"background": turtleMask[randNum]
+			"background": turtleMask[maskNum % 4]
 		});
+		maskNum++;
 	});
 
 });
