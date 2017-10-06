@@ -54,10 +54,13 @@ $(document).ready(function(){
 	let maskNum = 0;
 
 	$(".changeTurtle").click(function(){
-		$("body > #donny > div > .mask").css({
+		$(".mask").css({
 			"background": turtleMask[maskNum % 4]
 		});
 		maskNum++;
 	});
 
+	$(".pizzaTurtle").click(function(){
+		$(".mask").css("background", "url('images/za.jpg')");
+	})
 });
