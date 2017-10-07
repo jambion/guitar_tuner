@@ -58,16 +58,20 @@ $(document).ready(function(){
 
 	let maskNum = 0;
 
-	$(".changeTurtle").click(function(){
+	var newTurtle = function(){
 		$(".mask").css({
 			"background": turtleMask[maskNum % turtleMask.length]
 		});
 		$("#turtleInfo").html(turtleDescription[maskNum]);
 		maskNum++;
-	});
+	}
 
-	$(".pizzaTurtle").click(function(){
+	var zazaTurtle = function(){
 		$(".mask").css("background", "url('images/za.jpg')");
 		$("#turtleInfo").html("PIZZA TIME!");
-	})
+	}
+
+	$(".changeTurtle").click(newTurtle);
+
+	$(".pizzaTurtle").click(zazaTurtle);
 });
