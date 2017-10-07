@@ -36,6 +36,7 @@ img {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin: 10px;
 }
 
 #donny > div {
@@ -75,4 +76,11 @@ img {
 }
 .pizza {
 	background: url("images/za.jpg");
+}
+
+#turtleInfo {
+	max-width: 300px;
+	max-height: 200px;
+	background: white;
+	text-align: center;
 }
