@@ -1,33 +1,31 @@
 $(document).ready(function(){
 
-
-	var playClip = function(clipData) {
-		var sound = $(clipData.sound)[0];
-		sound.play();
+	var playGuitar = function(guitarData){
+		var guitString = $(guitarData.guitarString)[0];
+		guitString.play()
 	}
 
-
-	$("#lowE").on("click", {sound: "#audioLowE"}, function(event){
-		playClip(event.data);
+	$("#lowE").on("click", {guitarString: "#audioLowE"}, function(event){
+		playGuitar(event.data);
 	});
 
-	$("#A").on("click", {sound: "#audioA"}, function(event){
-		playClip(event.data);
-	});
-	$("#D").on("click", {sound: "#audioD"}, function(event){
-		playClip(event.data);
+	$("#A").on("click", {guitarString: "#audioA"}, function(event){
+		playGuitar(event.data);
 	});
 
-	$("#G").on("click", {sound: "#audioG"}, function(event){
-		playClip(event.data);
+	$("#D").on("click", {guitarString: "#audioD"}, function(event){
+		playGuitar(event.data);
 	});
 
-	$("#B").on("click", {sound: "#audioB"}, function(event){
-		playClip(event.data);
+	$("#G").on("click", {guitarString: "#audioG"}, function(event){
+		playGuitar(event.data);
 	});
 
-	$("#highE").on("click", {sound: "#audioHighE"}, function(event){
-		playClip(event.data);
+	$("#B").on("click", {guitarString: "#audioB"}, function(event){
+		playGuitar(event.data);
+	});
+	$("#highE").on("click", {guitarString: "#audioHighE"}, function(event){
+		playGuitar(event.data);
 	});
 
 
