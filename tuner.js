@@ -52,7 +52,7 @@ $(document).ready(function(){
 		$(".mask").css({
 			"background": turtleMask[maskNum % turtleMask.length]
 		});
-		$("#turtleInfo").html(turtleDescription[maskNum]);
+		$("#turtleInfo").html(turtleDescription[maskNum % turtleMask.length]);
 		maskNum++;
 	}
 
